@@ -1,8 +1,8 @@
 import java.sql.*;  
-class MysqlCon{  
+class check{  
 public static void main(String args[]){  
 try{  
-Class.forName("com.mysql.jdbc.Driver");  
+Class.forName("mysql").newInstance();  
 Connection con=DriverManager.getConnection(  
 "jdbc:mysql://localhost:3306/tej","root","root");  
 //here sonoo is database name, root is username and password  
